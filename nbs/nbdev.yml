@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "search-papers"
+  site-url: "https://deven367.github.io/search-papers"
+  description: "search papers using the elsevier API"
+  repo-branch: main
+  repo-url: "https://github.com/deven367/search-papers"
