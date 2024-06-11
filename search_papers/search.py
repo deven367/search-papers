@@ -48,6 +48,8 @@ def _process_response(response):
         print("No results found")
         return None
 
+
+
 # %% ../nbs/01_search.ipynb 6
 @click.command()
 @click.option("--query", "-q", help="Query string")

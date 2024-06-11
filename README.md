@@ -17,7 +17,8 @@ The API has 2 main functions.
 
 1.  [`set_api_key`](https://deven367.github.io/search-papers/utils.html#set_api_key)
     which takes an API key and sets it for the session.
-2.  `search_papers` which takes a query and returns a list of papers.
+2.  [`search`](https://deven367.github.io/search-papers/search.html#search)
+    which takes a query and returns a list of papers.
 
 To get an API key, follow the instructions mentioned here →
 <https://dev.elsevier.com/apikey/create>
