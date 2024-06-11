@@ -8,8 +8,12 @@ documentation.
 ## Install
 
 ``` sh
-pip install search_papers
+git clone https://github.com/deven367/search-papers
+cd search-papers
+pip install -e .
 ```
+
+The package will be soon uploaded on PyPi.
 
 ## How to use
 
