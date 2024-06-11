@@ -1,0 +1,62 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "search-papers",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation.",
+    "crumbs": [
+      "search-papers"
+    ]
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "search-papers",
+    "section": "Install",
+    "text": "Install\ngit clone https://github.com/deven367/search-papers\ncd search-papers\npip install -e .\nThe package will be soon uploaded on PyPi.",
+    "crumbs": [
+      "search-papers"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "search-papers",
+    "section": "How to use",
+    "text": "How to use\nThe API has 2 main functions.\n\nset_api_key which takes an API key and sets it for the session.\nsearch which takes a query and returns a list of papers.\n\nTo get an API key, follow the instructions mentioned here → https://dev.elsevier.com/apikey/create",
+    "crumbs": [
+      "search-papers"
+    ]
+  },
+  {
+    "objectID": "index.html#using-the-search-cli",
+    "href": "index.html#using-the-search-cli",
+    "title": "search-papers",
+    "section": "Using the search CLI",
+    "text": "Using the search CLI\n(torch) ➜  search_papers git:(main) ✗ search --help\nUsage: search [OPTIONS]\n\nOptions:\n  -q, --query TEXT            Query string\n  -p, --publication TEXT      Publication name\n  -oa, --open_access BOOLEAN  Open access\n  -o, --offset INTEGER        Offset\n  -c, --count INTEGER         Number of results\n  -sb, --sort_by TEXT         Sort by\n  -csv, --save_to_csv TEXT    Save to csv\n  --help                      Show this message and exit.",
+    "crumbs": [
+      "search-papers"
+    ]
+  },
+  {
+    "objectID": "search.html",
+    "href": "search.html",
+    "title": "Search",
+    "section": "",
+    "text": "source\n\nsearch\n\n search (query, publication, open_access, offset, count, sort_by,\n         save_to_csv)\n\nSeach the ScienceDirect API and save the results to a csv file",
+    "crumbs": [
+      "Search"
+    ]
+  },
+  {
+    "objectID": "utils.html",
+    "href": "utils.html",
+    "title": "Utils",
+    "section": "",
+    "text": "source\n\nset_api_key\n\n set_api_key (api_key:str)\n\nSet the API key to be used for the requests",
+    "crumbs": [
+      "Utils"
+    ]
+  }
+]
