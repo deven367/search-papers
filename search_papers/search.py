@@ -3,7 +3,7 @@
 # %% auto 0
 __all__ = ['search']
 
-# %% ../nbs/01_search.ipynb 1
+# %% ../nbs/01_search.ipynb 2
 import json
 import os
 
@@ -12,7 +12,7 @@ import numpy as np
 import pandas as pd
 import requests
 
-# %% ../nbs/01_search.ipynb 2
+# %% ../nbs/01_search.ipynb 3
 try:
     from dotenv import load_dotenv
 
@@ -26,13 +26,13 @@ try:
 except KeyError:
     raise Exception("Please set the ELSEVIER_API_KEY environment variable")
 
-# %% ../nbs/01_search.ipynb 3
+# %% ../nbs/01_search.ipynb 4
 def _fitler_null_authors(authors):
     if authors is np.nan:
         return 'Author not available'
     return ', '.join([i['name'] for i in authors])
 
-# %% ../nbs/01_search.ipynb 4
+# %% ../nbs/01_search.ipynb 5
 def _process_response(response):
     if response.status_code == 200:
         print("Total results: ", response.json()["resultsFound"])
@@ -50,7 +50,7 @@ def _process_response(response):
 
 
 
-# %% ../nbs/01_search.ipynb 5
+# %% ../nbs/01_search.ipynb 6
 @click.command()
 @click.option("--query", "-q", help="Query string")
 @click.option("--publication", "-p", help="Publication name")
