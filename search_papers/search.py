@@ -58,9 +58,9 @@ def _process_response(response):
 @click.option("--offset", "-o", help="Offset", type=int, default=0)
 @click.option("--count", "-c", help="Number of results", type=int,default=25)
 @click.option("--sort_by", "-sb", help="Sort by", type=str, default="date")
-@click.option("--save_to_csv", "-csv", help="Save to csv", type=str, default="results")
-def search(query, publication, open_access, offset, count, sort_by, save_to_csv):
-
+@click.option("--save_to_csv", "-csv", help="Save to csv", type=bool, default=True)
+def search(query, publication, open_access, offset, count, sort_by, save_to_csv)->None:
+    "Seach the ScienceDirect API and save the results to a csv file"
     json_data = {
         "qs": query,
         "pub": publication,
@@ -82,7 +82,8 @@ def search(query, publication, open_access, offset, count, sort_by, save_to_csv)
     )
     response = _process_response(response)
     if response is not None:
-        name = f"{query=} {publication=} {open_access=} {offset=} {count=} {sort_by=}"
-        response.to_csv(f"{name}.csv", index=False)
-        print(f"Results saved to {name}.csv")
+        if save_to_csv:
+            name = f"{query=} {publication=} {open_access=} {offset=} {count=} {sort_by=}"
+            response.to_csv(f"{name}.csv", index=False)
+            print(f"Results saved to {name}.csv")
 
