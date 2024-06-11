@@ -83,3 +83,4 @@ def search(query, publication, open_access, offset, count, sort_by, save_to_csv)
         name = f"{query=} {publication=} {open_access=} {offset=} {count=} {sort_by=}"
         response.to_csv(f"{name}.csv", index=False)
         print(f"Results saved to {name}.csv")
+
