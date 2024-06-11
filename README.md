@@ -13,10 +13,28 @@ pip install search_papers
 
 ## How to use
 
-Fill me in please! Don’t forget code examples:
+The API has 2 main functions.
 
-``` python
-1+1
+1.  [`set_api_key`](https://deven367.github.io/search-papers/utils.html#set_api_key)
+    which takes an API key and sets it for the session.
+2.  `search_papers` which takes a query and returns a list of papers.
+
+To get an API key, follow the instructions mentioned here →
+<https://dev.elsevier.com/apikey/create>
+
+## Using the [`search`](https://deven367.github.io/search-papers/search.html#search) CLI
+
+``` sh
+(torch) ➜  search_papers git:(main) ✗ search --help
+Usage: search [OPTIONS]
+
+Options:
+  -q, --query TEXT            Query string
+  -p, --publication TEXT      Publication name
+  -oa, --open_access BOOLEAN  Open access
+  -o, --offset INTEGER        Offset
+  -c, --count INTEGER         Number of results
+  -sb, --sort_by TEXT         Sort by
+  -csv, --save_to_csv TEXT    Save to csv
+  --help                      Show this message and exit.
 ```
-
-    2
